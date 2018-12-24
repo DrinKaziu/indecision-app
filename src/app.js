@@ -1,25 +1,34 @@
 console.log("App.js is running");
 
 //JSX - JavaScript XML
+
+let app = {
+  title: 'Indecision App',
+  subtitle: 'Put your life in the hands of a computer'
+};
+
 let template = (
   <div>
-    <h1>Indecision App</h1>
-    <p>This is some info!!!</p>
-    <ol>
-      <li>Item One</li>
-      <li>Item Two</li>
-    </ol>
+    <h1>{app.title}</h1>
+    <p>{app.subtitle}</p>
   </div>
 );
 
+let user = {
+  name: 'Nacho',
+  age: '6',
+  location: 'New York'
+}
+
+
 let templateTwo = (
   <div>
-    <h1>Drin Kaziu</h1>
-    <p>Age: 36</p>
-    <p>Location: New York</p>
+    <h1>{user.name}</h1>
+    <p>Age: {user.age}</p>
+    <p>Location: {user.location}</p>
   </div>
 );
 
 let appRoot = document.getElementById('app');
 
-ReactDOM.render(templateTwo, appRoot);
+ReactDOM.render(template, appRoot);
