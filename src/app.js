@@ -2,13 +2,13 @@ console.log("App.js is running");
 
 //JSX - JavaScript XML
 
-let app = {
+const app = {
   title: 'Indecision App',
   subtitle: 'Put your life in the hands of a computer',
   options: ['One', 'Two']
 };
 
-let template = (
+const template = (
   <div>
     <h1>{app.title}</h1>
     {app.subtitle && <p>{app.subtitle}</p>}
@@ -20,7 +20,7 @@ let template = (
   </div>
 );
 
-let user = {
+const user = {
   name: 'Nacho',
   age: '6',
   location: 'New York'
@@ -32,7 +32,7 @@ function getLocation(location) {
   }
 }
 
-let templateTwo = (
+const templateTwo = (
   <div>
     <h1>{user.name ? user.name : 'Anonimous'}</h1>
     {(user.age && user.age >= 18) && <p>Age: {user.age}</p>}
@@ -40,6 +40,6 @@ let templateTwo = (
   </div>
 );
 
-let appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot);
