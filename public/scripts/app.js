@@ -185,6 +185,7 @@ var AddOption = function (_React$Component6) {
       var option = e.target.elements.option.value.trim();
 
       if (option) {
+        alert(option);
         // this.props.options.push(option);
         // e.target.elements.option.value = '';
       }
